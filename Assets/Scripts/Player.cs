@@ -2,45 +2,39 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    private float moveSpeed = 5.0f;
-    [SerializeField]
-    private float jumpForce = 10.0f;
+    // https://github.com/herbou/Tuto_DrawTrajectory/blob/master/Assets/Scripts/
+    // mozna bude potreba public
     private Rigidbody2D rb;
-    private bool isGrounded;
+    private CircleCollider2D col;
 
-    private void Start()
+    public Vector3 Pos { get { return transform.position; } }
+
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<CircleCollider2D>();
     }
 
-    private void Update()
+    public void Push(Vector2 force)
     {
-        float moveInput = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        }
+        rb.AddForce(force, ForceMode2D.Impulse);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void ActivateRb()
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
+        rb.isKinematic = false;
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    public void DeactivateRb()
     {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = 0f;
+        rb.isKinematic = true;
     }
 
+
+
+    // dodelat
     public void KillPlayer()
     {
         Debug.Log("Umrer");
