@@ -77,5 +77,14 @@ public class GameManager : MonoBehaviour
         player.Push(force);
 
         trajectory.Hide();
+
+        Invoke("StopPlayer", 1f);
+
     }
+
+    void StopPlayer() {
+        player.DeactivateRb();
+     }
+
+    
 }

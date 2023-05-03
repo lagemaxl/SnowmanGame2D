@@ -32,8 +32,6 @@ public class Player : MonoBehaviour
         rb.isKinematic = true;
     }
 
-
-
     // dodelat
     public void KillPlayer()
     {

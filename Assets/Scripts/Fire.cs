@@ -9,7 +9,7 @@ public class Fire : MonoBehaviour
             Player player = other.gameObject.GetComponent<Player>();
             if (player != null)
             {
-                player.KillPlayer();
+                //player.KillPlayer();
             }
         }
     }
