@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float forceMultiplier = 10f;
+    public float maxForce = 20f;
     private Vector2 startMousePosition;
     private Vector2 endMousePosition;
     private Rigidbody2D rb;
@@ -25,8 +26,16 @@ public class Player : MonoBehaviour
         {
             endMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 direction = startMousePosition - endMousePosition;
+            float distance = Vector2.Distance(startMousePosition, endMousePosition);
+            float force = Mathf.Clamp(forceMultiplier * distance, 0f, maxForce);
             direction.Normalize();
-            rb.AddForce(direction * forceMultiplier, ForceMode2D.Impulse);
+            rb.AddForce(direction * force, ForceMode2D.Impulse);
+        }
+
+        // Postupnì zpomalovat kouli, jak se pohybuje
+        if (rb.velocity.magnitude > 0f)
+        {
+            rb.velocity *= 0.99f;
         }
     }
 }
