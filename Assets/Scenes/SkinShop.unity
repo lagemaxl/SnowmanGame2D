@@ -575,6 +575,7 @@ MonoBehaviour:
   images:
   - {fileID: 21300000, guid: ee95a210a7732c645a430e56e920aecc, type: 3}
   - {fileID: 0}
+  skinName: addon
 --- !u!1 &378397998
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +625,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 58107b5f8e47a094697d6c45f1846622, type: 3}
   - {fileID: 21300000, guid: fee788c016055114eb28b68bc1aa8c4d, type: 3}
   - {fileID: 0}
+  skinName: mounth
 --- !u!212 &378398001
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -777,6 +779,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: dffd4be9a53bd2147981f0996e987db1, type: 3}
   - {fileID: 21300000, guid: 19068274566732642931261b92bd55ad, type: 3}
   - {fileID: 21300000, guid: 16c58c8949e787b4890835dcf6059311, type: 3}
+  skinName: glass
 --- !u!1 &731385378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842590041}
   m_Layer: 0
-  m_Name: koule
+  m_Name: skin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1322,6 +1325,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6fd64ba7dd0e4b479facac3cb62a0e0, type: 3}
   - {fileID: 21300000, guid: c3c06b04118e5654aaf91d12d15cd290, type: 3}
   - {fileID: 21300000, guid: 63fc71b257227f14d8e8d3c0c2c66c63, type: 3}
+  skinName: smile
 --- !u!1 &1433368718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,6 +1496,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 71bf20f3b25b28547ae0b0e3b9a5d104, type: 3}
   - {fileID: 21300000, guid: e2c1433aaf0b2f548b7e74dce032de88, type: 3}
   - {fileID: 0}
+  skinName: had
 --- !u!212 &1540568164
 SpriteRenderer:
   m_ObjectHideFlags: 0
