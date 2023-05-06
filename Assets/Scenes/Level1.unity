@@ -320,7 +320,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1354628034}
   trajectory: {fileID: 91541449}
-  pushForce: 4
+  pushForce: 7
+  scaleFactor: 0.05
 --- !u!4 &1219542523
 Transform:
   m_ObjectHideFlags: 0
@@ -477,9 +478,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
