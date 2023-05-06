@@ -10,8 +10,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private Player player;
     [SerializeField] private Trajectory trajectory;
-    [SerializeField] private float pushForce = 4f;
+    [SerializeField] private float pushForce = 10f;
+    [SerializeField] private float scaleFactor = 0.1f;
+    [SerializeField] private float maxShootDistance = 5f;
 
+
+    private float totalDistanceTraveled = 0f;
     private bool isDragging = false;
 
     private Vector2 startPoint;
@@ -51,6 +55,12 @@ public class GameManager : MonoBehaviour
         {
             OnDrag();
         }
+        else
+        {
+            float distanceTraveledThisFrame = player.PlayerVelocity.magnitude * Time.deltaTime;
+            totalDistanceTraveled += distanceTraveledThisFrame;
+            UpdatePlayerScale();
+        }
     }
 
     void OnDragStart()
@@ -65,6 +75,7 @@ public class GameManager : MonoBehaviour
     {
         endPoint = cam.ScreenToWorldPoint(Input.mousePosition);
         distance = Vector2.Distance(startPoint, endPoint);
+        distance = Mathf.Clamp(distance, 0, maxShootDistance);
         direction = (startPoint - endPoint).normalized;
         force = direction * distance * pushForce;
 
@@ -85,5 +96,9 @@ public class GameManager : MonoBehaviour
         player.DeactivateRb();
     }
 
-
+    void UpdatePlayerScale()
+    {
+        float scaleValue = 1 + scaleFactor * totalDistanceTraveled;
+        player.transform.localScale = new Vector3(scaleValue, scaleValue, 1);
+    }
 }

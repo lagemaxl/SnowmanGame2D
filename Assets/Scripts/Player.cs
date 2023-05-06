@@ -3,11 +3,12 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // https://github.com/herbou/Tuto_DrawTrajectory/blob/master/Assets/Scripts/
-    // mozna bude potreba public
+
     private Rigidbody2D rb;
     private CircleCollider2D col;
 
     public Vector3 Pos { get { return transform.position; } }
+    public Vector2 PlayerVelocity { get { return rb.velocity; } }
 
     void Awake()
     {
@@ -36,7 +37,7 @@ public class Player : MonoBehaviour
     public void KillPlayer()
     {
         Debug.Log("Umrer");
-        // Ukon?ení hry
+        // Ukon?en? hry
         Application.Quit();
     }
 }
