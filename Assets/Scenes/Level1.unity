@@ -391,6 +391,18 @@ PrefabInstance:
       propertyPath: m_LinearDrag
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 35191840393316904, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
+      propertyPath: m_Radius
+      value: 0.5533808
+      objectReference: {fileID: 0}
+    - target: {fileID: 35191840393316904, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.009921849
+      objectReference: {fileID: 0}
+    - target: {fileID: 35191840393316904, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.012401938
+      objectReference: {fileID: 0}
     - target: {fileID: 35191840393316906, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
       propertyPath: m_RootOrder
       value: 1
