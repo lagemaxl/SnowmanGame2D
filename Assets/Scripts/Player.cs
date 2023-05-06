@@ -5,6 +5,13 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private CircleCollider2D col;
 
+
+    [SerializeField]
+    private AudioSource source;
+    
+    [SerializeField]
+    private AudioClip strom;
+
     [SerializeField]
     private float treeCollisionSizeReduce = 0.5f;
 
@@ -45,6 +52,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Tree"))
         {
+            source.PlayOneShot(strom);
             GameManager.Instance.ReducePlayerScale(treeCollisionSizeReduce);
         }
     }
