@@ -1,41 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float forceMultiplier = 10f;
-    public float maxForce = 20f;
-    private Vector2 startMousePosition;
-    private Vector2 endMousePosition;
+    // https://github.com/herbou/Tuto_DrawTrajectory/blob/master/Assets/Scripts/
+    // mozna bude potreba public
     private Rigidbody2D rb;
+    private CircleCollider2D col;
 
-    void Start()
+    public Vector3 Pos { get { return transform.position; } }
+
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<CircleCollider2D>();
     }
 
-    void Update()
+    public void Push(Vector2 force)
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            startMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        }
+        rb.AddForce(force, ForceMode2D.Impulse);
+    }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            endMousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 direction = startMousePosition - endMousePosition;
-            float distance = Vector2.Distance(startMousePosition, endMousePosition);
-            float force = Mathf.Clamp(forceMultiplier * distance, 0f, maxForce);
-            direction.Normalize();
-            rb.AddForce(direction * force, ForceMode2D.Impulse);
-        }
+    public void ActivateRb()
+    {
+        rb.isKinematic = false;
+    }
 
-        // Postupnì zpomalovat kouli, jak se pohybuje
-        if (rb.velocity.magnitude > 0f)
-        {
-            rb.velocity *= 0.99f;
-        }
+    public void DeactivateRb()
+    {
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = 0f;
+        rb.isKinematic = true;
+    }
+
+    // dodelat
+    public void KillPlayer()
+    {
+        Debug.Log("Umrer");
+        // Ukon?ení hry
+        Application.Quit();
     }
 }
