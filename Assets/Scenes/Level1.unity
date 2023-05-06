@@ -203,6 +203,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.13, y: 9.3}
   m_EdgeRadius: 0
+--- !u!95 &565973968
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565973960}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8df2b6a0b439d34e8c604b7503150f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &774688864
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +656,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 949164883175329229, guid: 98a821c99ec32dd4c850585deca7e153, type: 3}
+      propertyPath: treeAnimator
+      value: 
+      objectReference: {fileID: 565973968}
     - target: {fileID: 5091179054433986723, guid: 98a821c99ec32dd4c850585deca7e153, type: 3}
       propertyPath: m_Name
       value: strom
