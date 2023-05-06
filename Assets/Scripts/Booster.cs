@@ -1,22 +1,16 @@
 using UnityEngine;
 
-public class Booster : Bounce
+public class Booster : MonoBehaviour
 {
-    [SerializeField]
-    private float shrinkFactor = 0.5f;
-    [SerializeField]
-    private float speedMultiplier = 2.0f;
+    [SerializeField] private float boostForce = 10f;
 
-    protected override void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            Vector2 bounceDirection = collision.contacts[0].normal;
-            Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
-            playerRigidbody.AddForce(-bounceDirection * bounceForce, ForceMode2D.Impulse);
-
-            playerRigidbody.transform.localScale *= shrinkFactor;
-            playerRigidbody.velocity *= speedMultiplier;
+            Rigidbody2D playerRigidbody = other.GetComponent<Rigidbody2D>();
+            playerRigidbody.AddForce(transform.right * boostForce, ForceMode2D.Impulse);
+            GameManager.Instance.ReducePlayerScale(2f);
         }
     }
 }
