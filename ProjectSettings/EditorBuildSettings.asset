@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SkinShop.unity
+    guid: aa7fb185f916edf4b9a16fe958187ef9
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: b02e71aa81fc35346b6d9ffae624659d
   m_configObjects: {}
