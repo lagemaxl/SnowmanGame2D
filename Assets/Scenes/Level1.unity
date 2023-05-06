@@ -664,6 +664,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: strom
       objectReference: {fileID: 0}
+    - target: {fileID: 5091179054433986723, guid: 98a821c99ec32dd4c850585deca7e153, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     - target: {fileID: 7615972557891757993, guid: 98a821c99ec32dd4c850585deca7e153, type: 3}
       propertyPath: m_RootOrder
       value: 7
