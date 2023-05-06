@@ -322,6 +322,7 @@ MonoBehaviour:
   trajectory: {fileID: 91541449}
   pushForce: 7
   scaleFactor: 0.05
+  maxShootDistance: 1
 --- !u!4 &1219542523
 Transform:
   m_ObjectHideFlags: 0
