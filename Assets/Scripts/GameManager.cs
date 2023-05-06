@@ -78,8 +78,6 @@ public class GameManager : MonoBehaviour
 
         trajectory.Hide();
 
-        Invoke("StopPlayer", 1f);
-
     }
 
     void StopPlayer()
