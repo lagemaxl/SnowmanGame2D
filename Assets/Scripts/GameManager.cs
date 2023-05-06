@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -101,5 +102,10 @@ public class GameManager : MonoBehaviour
         float scaleValue = 1 + scaleFactor * totalDistanceTraveled;
         scaleValue = Mathf.Clamp(scaleValue, 1, 2);
         player.transform.localScale = new Vector3(scaleValue, scaleValue, 1);
+    }
+    
+    public void ReducePlayerScale(float scale)
+    {
+        totalDistanceTraveled /= scale;
     }
 }

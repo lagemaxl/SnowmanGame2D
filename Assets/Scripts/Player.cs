@@ -7,6 +7,10 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private CircleCollider2D col;
 
+    [SerializeField]
+    private float treeCollisionSizeReduce = 0.5f;
+
+
     public Vector3 Pos { get { return transform.position; } }
     public Vector2 PlayerVelocity { get { return rb.velocity; } }
 
@@ -37,7 +41,15 @@ public class Player : MonoBehaviour
     public void KillPlayer()
     {
         Debug.Log("Umrer");
-        // Ukon?en? hry
+        
         Application.Quit();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Tree"))
+        {
+            GameManager.Instance.ReducePlayerScale(2f);
+        }
     }
 }
