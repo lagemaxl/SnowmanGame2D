@@ -2,14 +2,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // https://github.com/herbou/Tuto_DrawTrajectory/blob/master/Assets/Scripts/
-
     private Rigidbody2D rb;
     private CircleCollider2D col;
 
     [SerializeField]
     private float treeCollisionSizeReduce = 0.5f;
-
 
     public Vector3 Pos { get { return transform.position; } }
     public Vector2 PlayerVelocity { get { return rb.velocity; } }
@@ -37,11 +34,10 @@ public class Player : MonoBehaviour
         rb.isKinematic = true;
     }
 
-    // dodelat
     public void KillPlayer()
     {
         Debug.Log("Umrer");
-        
+
         Application.Quit();
     }
 
@@ -49,7 +45,19 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Tree"))
         {
-            GameManager.Instance.ReducePlayerScale(2f);
+            GameManager.Instance.ReducePlayerScale(treeCollisionSizeReduce);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wind"))
+        {
+            Wind wind = collision.gameObject.GetComponent<Wind>();
+            if (wind != null)
+            {
+                rb.AddForce(wind.WindDirection.normalized * wind.WindForce, ForceMode2D.Impulse);
+            }
         }
     }
 }
