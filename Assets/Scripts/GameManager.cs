@@ -14,6 +14,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float pushForce = 10f;
     [SerializeField] private float scaleFactor = 0.1f;
     [SerializeField] private float maxShootDistance = 5f;
+    [SerializeField] private float minAllowedSize = 0.5f;
+    [SerializeField] private float maxAllowedSize = 2f;
+    [SerializeField] private float minimumWinSize = 1.5f;
+    [SerializeField] private float maximumWinSize = 1.9f;
+
+    public float MinimumWinSize { get { return minimumWinSize; } }
+    public float MaximumWinSize { get { return maximumWinSize; } }
+
 
 
     private float totalDistanceTraveled = 0f;
@@ -99,8 +107,8 @@ public class GameManager : MonoBehaviour
 
     void UpdatePlayerScale()
     {
-        float scaleValue = 1 + scaleFactor * totalDistanceTraveled;
-        scaleValue = Mathf.Clamp(scaleValue, 1, 2);
+        float scaleValue = minAllowedSize + scaleFactor * totalDistanceTraveled;
+        scaleValue = Mathf.Clamp(scaleValue, minAllowedSize, maxAllowedSize);
         player.transform.localScale = new Vector3(scaleValue, scaleValue, 1);
     }
     
