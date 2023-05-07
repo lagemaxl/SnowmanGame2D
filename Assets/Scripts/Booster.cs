@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Booster : MonoBehaviour
+public class Wind : MonoBehaviour
 {
     [SerializeField]
-    private Vector3 boosterDirection = Vector3.right;
+    private Vector3 windDirection = Vector3.right;
 
-    public Vector3 BoosterDirection => boosterDirection;
+    public Vector3 WindDirection => windDirection;
 
     [SerializeField]
     private float windForce = 1f;
