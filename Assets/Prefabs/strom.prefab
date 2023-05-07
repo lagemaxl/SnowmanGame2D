@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7615972557891757993}
   - component: {fileID: 5664637458076896193}
-  - component: {fileID: 949164883175329229}
   m_Layer: 0
   m_Name: strom
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,17 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &949164883175329229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5091179054433986723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5a41a9cd18c2174296990a3c5a6090c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bounceForce: 0.5
-  treeAnimator: {fileID: 0}
