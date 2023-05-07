@@ -28,19 +28,26 @@ public class ChangeSkin : MonoBehaviour
     }
 
     // Metoda pro zmìnu obrázku
-    public void Change()
+    public void Change(bool forward)
     {
-        // Zvýšíme index aktuálního obrázku a ovìøíme, zda jsme pøekroèili poèet obrázkù v seznamu
-        currentImageIndex++;
-        if (currentImageIndex >= images.Count)
+        if (forward)
         {
-            currentImageIndex = 0;
+            currentImageIndex++;
+            if (currentImageIndex >= images.Count)
+            {
+                currentImageIndex = 0;
+            }
+        }
+        else
+        {
+            currentImageIndex--;
+            if (currentImageIndex < 0)
+            {
+                currentImageIndex = images.Count - 1;
+            }
         }
 
-        // Nastavíme nový obrázek na cílovém objektu
         targetObject.sprite = images[currentImageIndex];
-
-        // Uložíme index nového obrázku pro tento skin
         PlayerPrefs.SetInt(skinName, currentImageIndex);
     }
 }

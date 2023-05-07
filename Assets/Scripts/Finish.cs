@@ -11,7 +11,7 @@ public class Finish : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             float playerSize = other.gameObject.transform.localScale.x;
-            if (playerSize > 1f)// && playerSize < 2f)
+            if (playerSize > 1.2f && playerSize < 1.8f)
             {
                 SceneManager.LoadScene("LevelSelect");
             }
