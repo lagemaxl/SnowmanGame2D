@@ -1560,10 +1560,10 @@ RectTransform:
   m_Father: {fileID: 1110337831}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -0.019897461, y: -133}
-  m_SizeDelta: {x: 1113.5, y: 841.1}
+  m_SizeDelta: {x: -806.5, y: 841.1}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &822752133
 MonoBehaviour:
@@ -2418,10 +2418,10 @@ RectTransform:
   m_Father: {fileID: 705778780}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.009887695, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 1080}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1110337832
 MonoBehaviour:
@@ -3009,10 +3009,10 @@ RectTransform:
   m_Father: {fileID: 705778780}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.009887695, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 1080}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1386386349
 MonoBehaviour:
@@ -3199,7 +3199,7 @@ GameObject:
   - component: {fileID: 1440963499}
   - component: {fileID: 1440963498}
   m_Layer: 5
-  m_Name: "p\u0159ekryt\xED (1)"
+  m_Name: overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
