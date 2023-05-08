@@ -11,10 +11,7 @@ public class Player : MonoBehaviour
     
     [SerializeField]
     private AudioClip strom;
-
-    [SerializeField]
-    private float treeCollisionSizeReduce = 0.5f;
-
+    
     public Vector3 Pos { get { return transform.position; } }
     public Vector2 PlayerVelocity { get { return rb.velocity; } }
 
