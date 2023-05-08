@@ -11,6 +11,7 @@ public class Tree : Bounce
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            GameManager.Instance.ReducePlayerScale(2f);
             treeAnimator.SetTrigger("Shake");
         }
     }
