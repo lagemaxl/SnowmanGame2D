@@ -6,6 +6,7 @@ public class bgMusic : MonoBehaviour
 {
     public static bgMusic instance;
 
+
     void Awake()
     {
         if (instance != null)

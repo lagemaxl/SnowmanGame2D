@@ -18,4 +18,9 @@ public class ShowObjectOnClick : MonoBehaviour
         // Zobrazí objekt po kliknutí na tlaèítko.
         objectToShow.SetActive(true);
     }
+    
+    public void HideObject()
+    {
+        objectToShow.SetActive(false);
+    }
 }
