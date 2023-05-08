@@ -1,19 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class Finish : MonoBehaviour
 {
+    [SerializeField]
+    private float minSizeToFinish = 1.2f;
+
+    [SerializeField]
+    private float maxSizeToFinish = 1.8f;
+
+    [SerializeField]
+    private string nextLevelName = "LevelSelect";
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             float playerSize = other.gameObject.transform.localScale.x;
-            if (playerSize > 1.2f && playerSize < 1.8f)
+            if (playerSize > minSizeToFinish && playerSize < maxSizeToFinish)
             {
-                SceneManager.LoadScene("LevelSelect");
+                SceneManager.LoadScene(nextLevelName);
             }
         }
     }
