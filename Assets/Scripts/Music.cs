@@ -5,22 +5,50 @@ using UnityEngine.Audio;
 
 public class Music : MonoBehaviour
 {
-
-    [SerializeField]
-    private AudioClip audioClip;
+    public static Music Instance;
 
     [SerializeField]
     private AudioMixer audioMixer;
 
-    
+    [SerializeField]
+    private AudioClip musicClip;
+
+    private AudioSource audioSource;
+
+    private float currentVolume;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        GameObject child = new GameObject("AudioSource");
-        child.transform.parent = transform;
-        AudioSource audioSource = child.AddComponent<AudioSource>();
-        audioSource.clip = audioClip;
+        audioMixer.GetFloat("Volume", out currentVolume);
+
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = musicClip;
         audioSource.loop = true;
         audioSource.outputAudioMixerGroup = audioMixer.FindMatchingGroups("Master")[0];
         audioSource.Play();
+    }
+
+    public void SetVolume(float volume)
+    {
+        currentVolume = volume;
+        audioMixer.SetFloat("Volume", currentVolume);
+    }
+
+    public float GetVolume()
+    {
+        return currentVolume;
     }
 }

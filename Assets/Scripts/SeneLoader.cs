@@ -10,9 +10,5 @@ public class SeneLoader : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
-    private void Start()
-    {
-        //bgMusic.instance.GetComponent<AudioSource>().Play();
-    }
 
 }

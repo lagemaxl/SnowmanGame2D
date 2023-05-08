@@ -4,19 +4,38 @@ using UnityEngine.UI;
 
 public class Finish : MonoBehaviour
 {
-    [SerializeField]
-    private float minSizeToFinish = 1.2f;
-
-    [SerializeField]
-    private float maxSizeToFinish = 1.8f;
-
-    [SerializeField]
-    private string nextLevelName = "LevelSelect";
-
-    [SerializeField]
-    private Button finishButton;
-
     private bool hasFinished = false;
+    
+    private float minSizeToFinish = 0f;
+    private float maxSizeToFinish = 0f;
+    private string nextLevelName = "";
+    private Button finishButton = null;
+
+
+
+    private void Start()
+    {
+        if (transform.parent != null)
+        {
+            FinishSettings parentSettings = transform.parent.GetComponent<FinishSettings>();
+
+            if (parentSettings != null)
+            {
+                minSizeToFinish = parentSettings.MinSizeToFinish;
+                maxSizeToFinish = parentSettings.MaxSizeToFinish;
+                nextLevelName = parentSettings.NextLevelName;
+                finishButton = parentSettings.FinishButton;
+            }
+            else
+            {
+                Debug.LogWarning("Parent GameObject does not have a FinishSettings component.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("This GameObject does not have a parent.");
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {

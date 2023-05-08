@@ -15,9 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SkinShop.unity
     guid: aa7fb185f916edf4b9a16fe958187ef9
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Tutorial/Tutorial1.unity
     guid: b02e71aa81fc35346b6d9ffae624659d
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
+    path: Assets/Scenes/Tutorial/Tutorial2.unity
     guid: 652238ec869b56d4eb11b881aefb6b1d
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial3.unity
+    guid: e12d0aed8206ab546b389b0547ff84e1
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/Tutorial4.unity
+    guid: a2dea4fa5da20424dae3ce780a74f906
   m_configObjects: {}

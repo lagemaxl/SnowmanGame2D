@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float maxShootDistance = 5f;
     [SerializeField] private float minScale = 1f;
     [SerializeField] private float maxScale = 2f;
+    [SerializeField] private GameObject settings;
 
 
     private float totalDistanceTraveled = 0f;
@@ -43,7 +44,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !settings.activeSelf)
         {
             isDragging = true;
             OnDragStart();
