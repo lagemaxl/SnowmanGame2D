@@ -12,7 +12,7 @@ public class SeneLoader : MonoBehaviour
     }
     private void Start()
     {
-        bgMusic.instance.GetComponent<AudioSource>().Play();
+        //bgMusic.instance.GetComponent<AudioSource>().Play();
     }
 
 }
