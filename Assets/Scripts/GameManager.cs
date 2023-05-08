@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private float pushForce = 10f;
     [SerializeField] private float scaleFactor = 0.1f;
     [SerializeField] private float maxShootDistance = 5f;
+    [SerializeField] private float minScale = 1f;
+    [SerializeField] private float maxScale = 2f;
 
 
     private float totalDistanceTraveled = 0f;
@@ -99,8 +101,8 @@ public class GameManager : MonoBehaviour
 
     void UpdatePlayerScale()
     {
-        float scaleValue = 1 + scaleFactor * totalDistanceTraveled;
-        scaleValue = Mathf.Clamp(scaleValue, 1, 2);
+        float scaleValue = minScale + scaleFactor * totalDistanceTraveled;
+        scaleValue = Mathf.Clamp(scaleValue, minScale, maxScale);
         player.transform.localScale = new Vector3(scaleValue, scaleValue, 1);
     }
     

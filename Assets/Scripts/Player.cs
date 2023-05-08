@@ -48,14 +48,7 @@ public class Player : MonoBehaviour
         Application.Quit();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Tree"))
-        {
-            source.PlayOneShot(strom);
-            GameManager.Instance.ReducePlayerScale(treeCollisionSizeReduce);
-        }
-    }
+  
 
     private void OnTriggerStay2D(Collider2D collision)
     {
