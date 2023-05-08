@@ -14,9 +14,5 @@ public class SeneLoader : MonoBehaviour
     {
         bgMusic.instance.GetComponent<AudioSource>().Play();
     }
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
 
 }
