@@ -5929,6 +5929,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6088806297497620901, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6088806297617373317, guid: 809d0448515f6564e9a577586b3464e0, type: 3}
       propertyPath: m_Name
       value: koule

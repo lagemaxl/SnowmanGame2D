@@ -12,10 +12,9 @@ public class IceSurface : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D playerRigidbody = other.gameObject.GetComponent<Rigidbody2D>();
-            PhysicsMaterial2D playerMaterial = playerRigidbody.sharedMaterial;
 
-            playerMaterial.friction = frictionReduction;
             playerRigidbody.velocity *= speedMultiplier;
+            playerRigidbody.drag *= frictionReduction;
         }
     }
 
@@ -24,9 +23,7 @@ public class IceSurface : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D playerRigidbody = other.gameObject.GetComponent<Rigidbody2D>();
-            PhysicsMaterial2D playerMaterial = playerRigidbody.sharedMaterial;
-
-            playerMaterial.friction = 1.0f;
+            playerRigidbody.drag /= frictionReduction;
         }
     }
 }
