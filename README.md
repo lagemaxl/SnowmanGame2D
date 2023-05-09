@@ -9,7 +9,7 @@
 - [ ] Vylepšení UI (responzivita)
 - [ ] Balanvoání obtížnosti
 - [ ] Funkční android build
-
+- [ ] Particle system pro snezeni + nastaveni snezeni
 
 
 ## Credits: 
