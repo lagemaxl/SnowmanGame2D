@@ -5,6 +5,11 @@
 ## Todo:
 
 - [ ] SFX
+- [ ] particles/animace pro mechaniky
+- [ ] upravit force (drag balance)
+- [ ] ploty
+- [ ] bonus level fix
+- [ ] nová grafika (jeden styl)
 - [ ] Optimalizace scriptů
 - [ ] Vylepšení UI (responzivita)
 - [ ] Balanvoání obtížnosti
