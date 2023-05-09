@@ -2,9 +2,24 @@
 
 ## [Zadání](Snowball.pdf) 
 
-## Mechaniky hry
+## Todo:
+
+- [] SFX
+- [] Optimalizace scriptů
+- [] Vylepšení UI (responzivita)
+- [] Balanvoání obtížnosti
+- [] Funkční android build
 
 
+
+## Credits: 
+
+Díky všem, kteří nám pomohli s vývojem hry.
+
+
+- Background music: [She Likes It Harder](https://soundcloud.com/arny-martin-krpes/she-likes-it-harder) - [Thearnyy](https://soundcloud.com/arny-martin-krpes)
+- Snowman skins: [Rosalliart](https://www.instagram.com/_rozalie_m/)
+- SFX (ještě není implementované): [Dejny](https://dejny.eth)
 
 ## Devs
 <table>
