@@ -4,11 +4,11 @@
 
 ## Todo:
 
-- [] SFX
-- [] Optimalizace scriptů
-- [] Vylepšení UI (responzivita)
-- [] Balanvoání obtížnosti
-- [] Funkční android build
+- [ ] SFX
+- [ ] Optimalizace scriptů
+- [ ] Vylepšení UI (responzivita)
+- [ ] Balanvoání obtížnosti
+- [ ] Funkční android build
 
 
 
