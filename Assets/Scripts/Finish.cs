@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,7 +11,8 @@ public class Finish : MonoBehaviour
     private float maxSizeToFinish = 0f;
     private string nextLevelName = "";
     private Button finishButton = null;
-
+    [SerializeField]
+    private TextMeshProUGUI textMeshPro; 
 
 
     private void Start()
@@ -42,6 +44,18 @@ public class Finish : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             float playerSize = other.gameObject.transform.localScale.x;
+            if(playerSize > maxSizeToFinish)
+            {
+                textMeshPro.text = "Koule je moc velka";
+            }
+
+            if (playerSize < minSizeToFinish)
+            {
+                textMeshPro.text = "Koule je moc mala";
+                
+            }
+            
+
             if (playerSize > minSizeToFinish && playerSize < maxSizeToFinish && !hasFinished)
             {
                 hasFinished = true;
