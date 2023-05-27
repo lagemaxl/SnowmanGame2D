@@ -46,13 +46,15 @@ public class Finish : MonoBehaviour
             float playerSize = other.gameObject.transform.localScale.x;
             if(playerSize > maxSizeToFinish)
             {
-                textMeshPro.text = "Koule je moc velka";
-            }
-
-            if (playerSize < minSizeToFinish)
+                textMeshPro.text = "Too big";
+            } else if (playerSize < minSizeToFinish)
             {
-                textMeshPro.text = "Koule je moc mala";
-                
+                textMeshPro.text = "Too small";
+
+
+            }else
+            {
+                textMeshPro.text = "";
             }
             
 
