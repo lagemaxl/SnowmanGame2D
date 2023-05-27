@@ -82,7 +82,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -148,7 +148,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -214,7 +214,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -282,10 +282,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: border vertical (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
-      propertyPath: bounceForce
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -350,7 +346,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -416,7 +412,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -482,7 +478,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -548,7 +544,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -612,10 +608,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1914641830268735371}
     m_Modifications:
-    - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
-      propertyPath: bounceForce
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
       value: border horizontal (18)
@@ -680,7 +672,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -746,7 +738,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -816,7 +808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -882,7 +874,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -948,7 +940,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1014,7 +1006,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1122,10 +1114,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5965931428789233912, guid: 0bb778635cc47ea438422c0fd77e371b, type: 3}
-      propertyPath: bounceForce
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6969233927189972788, guid: 0bb778635cc47ea438422c0fd77e371b, type: 3}
       propertyPath: m_Name
       value: border (1)
@@ -1146,7 +1134,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1212,7 +1200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1278,7 +1266,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1348,7 +1336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -1414,7 +1402,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1484,7 +1472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -1554,7 +1542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -1620,7 +1608,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1686,7 +1674,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1796,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5965931428789233912, guid: 0bb778635cc47ea438422c0fd77e371b, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6969233927189972788, guid: 0bb778635cc47ea438422c0fd77e371b, type: 3}
       propertyPath: m_Name
@@ -1818,7 +1806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -1884,7 +1872,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1139117800340189069, guid: 4edd088f6eae0494fa7306b2700f21cf, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2134499957560007665, guid: 4edd088f6eae0494fa7306b2700f21cf, type: 3}
       propertyPath: m_RootOrder
@@ -1962,7 +1950,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -2032,7 +2020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -2098,7 +2086,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1139117800340189069, guid: 4edd088f6eae0494fa7306b2700f21cf, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2134499957560007665, guid: 4edd088f6eae0494fa7306b2700f21cf, type: 3}
       propertyPath: m_RootOrder
@@ -2176,7 +2164,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -2246,7 +2234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -2308,7 +2296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1404280819025165853, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521593291588890530, guid: b16e96104cd93ad4fb26221257abfddc, type: 3}
       propertyPath: m_Name
@@ -2378,7 +2366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -2448,7 +2436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -2518,7 +2506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
@@ -2588,7 +2576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064161289395149484, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: bounceForce
-      value: 3
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8338328727246260030, guid: 15a236809e0b07e4da0e2054f9b53356, type: 3}
       propertyPath: m_RootOrder
