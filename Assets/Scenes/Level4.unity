@@ -1624,6 +1624,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 260354540636498722, guid: 8fc1a23e36ed62541bdb1f002c198db6, type: 3}
+      propertyPath: windDirection.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 260354540636498732, guid: 8fc1a23e36ed62541bdb1f002c198db6, type: 3}
       propertyPath: m_RootOrder
       value: 5
