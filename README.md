@@ -1,5 +1,10 @@
 # SnowmanGame2D
 
+Nemame motivaci na projektu dal pracovat, je to open-source, takze si s tim muzete delat co chcete.
+
+Licence: [GPLv3](./LICENSE)
+
+[Beta realease](https://github.com/lagemaxl/SnowmanGame2D/releases/tag/beta)
 ## [Zadání](Snowball.pdf) 
 
 ## Todo:
@@ -15,7 +20,7 @@
 - [ ] Balanvoání obtížnosti
 - [ ] Funkční android build
 - [ ] Particle system pro snezeni + nastaveni snezeni
-
+- [ ] Opravit settings button, menu se otevre az po druhem kliknuti
 
 ## Credits: 
 
